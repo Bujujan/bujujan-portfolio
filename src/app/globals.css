@@ -3,18 +3,35 @@
 @tailwind utilities;
 
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: gray transparent;
+  
+}
+
+body {
+  overflow-x: hidden;
+}
+
 
 @layer base {
     .nav-item {
-        @apply px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300
+      @apply px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300
     }
     .box {
-        @apply border border-white/15 bg-gray-500/10 rounded-3xl hover:-translate-y-1 duration-300 hover:shadow-white/10 hover:shadow-lg
+      @apply border border-white/15 bg-gray-500/10 rounded-3xl duration-300 hover:shadow-white/10 hover:shadow-lg
     }
     .center {
-        @apply flex justify-center items-center
+      @apply flex justify-center items-center
     }
-    /* styles.css or a similar stylesheet */
+    .anim {
+      @apply hover:-translate-y-1 hover:scale-105 hover:bg-white/10
+    }
+    .cube {
+      @apply size-[100px] bg-cover absolute m-10
+    }
+
+    
 @keyframes slideLeft {
     to {
       transform: translateX(calc(-100% - 56px));
@@ -25,4 +42,148 @@
     animation: slideLeft 20s linear infinite;
   }
   
+  
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInRight{
+  animation: slideInRight .5s ease-in;
+
+}
+
+.slideInRightdelay{
+  opacity: 0;
+  animation: slideInRight .5s ease-in;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+}
+
+.slideInRightlate{
+  opacity: 0;
+  animation: slideInRight .5s ease-in;
+  animation-delay: .3s;
+  animation-fill-mode: forwards;
+}
+.slideInRightlater{
+  opacity: 0;
+  animation: slideInRight .5s ease-in;
+  animation-delay: .4s;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInLeft{
+  animation: slideInLeft .5s ease-in;
+
+}
+
+.slideInLeftdelay{
+  opacity: 0;
+  animation: slideInLeft .5s ease-in;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+}
+
+.slideInLeftlate{
+  opacity: 0;
+  animation: slideInLeft .5s ease-in;
+  animation-delay: .3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInUp{
+  animation: slideInUp .5s ease-in;
+
+}
+
+.slideInUpdelay{
+  opacity: 0;
+  animation: slideInUp .5s ease-in;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+}
+
+.slideInUplate{
+  opacity: 0;
+  animation: slideInUp .5s ease-in;
+  animation-delay: .6s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInUp{
+  animation: slideInUp .5s ease-in;
+
+}
+
+@keyframes floatTilt {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, -5px) rotate(-5deg); /* Tilt slightly to the left */
+  }
+  50% {
+    transform: translate(-5px, 5px) rotate(0deg); /* Back to the original position */
+  }
+  75% {
+    transform: translate(5px, 5px) rotate(5deg); /* Tilt slightly to the right */
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.floatTilt {
+  animation: floatTilt 4s ease-in-out infinite; /* Duration and looping */
 }
