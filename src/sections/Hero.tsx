@@ -27,7 +27,7 @@ export const HeroSection = () => {
             <div className="absolute -inset-0 -z-30 opacity-10" style={{backgroundImage: `url(${grainImage.src})`}}></div>
             <div className="cube ml-[200px] floatTilt filter blur-sm absolute -inset-0 -z-30 opacity-[20%]" style={{backgroundImage: `url(${cube.src})`, backgroundRepeat: 'no-repeat'}}></div>
             <div className="cube floatTilt size-[400px] ml-[1700px] mt-[100px] filter blur-lg absolute -inset-0 -z-30 opacity-[20%]" style={{backgroundImage: `url(${cube.src})`, backgroundRepeat: 'no-repeat'}}></div>
-            <div className="cube size-[500px] m-96 floatTilt absolute filter blur-2xl -inset-0 opacity-[20%]" style={{backgroundImage: `url(${cube.src})`, backgroundRepeat: 'no-repeat'}}></div>
+            <div className="cube size-[500px] m-96 floatTilt absolute filter blur-2xl -inset-0 -z-30 opacity-[20%]" style={{backgroundImage: `url(${cube.src})`, backgroundRepeat: 'no-repeat'}}></div>
             <div className="container flex flex-col md:grid-cols-2 md:flex-row md:w-[65%] w-full h-full">
                 <div className="flex flex-col md:flex-row w-full gap-6">
 
