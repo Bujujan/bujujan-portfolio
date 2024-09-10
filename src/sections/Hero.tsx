@@ -1,4 +1,4 @@
-import faceEmoji from "@/assets/images/memoji-smile.png";
+import faceEmoji from "@/assets/images/bujujan.png";
 import rabat from '@/assets/images/Rabat.jpg';
 import eye from '@/assets/images/eye.png';
 import grainImage from '@/assets/images/grain.jpg';
