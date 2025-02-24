@@ -31,20 +31,20 @@ export const HeroSection = () => {
             <div className="container justify-center flex flex-col md:grid-cols-2 md:flex-row md:w-[100%] lg:w-[65%] w-full h-full">
                 <div className="flex flex-col md:flex-col lg:flex-row w-full gap-6">
 
-                    <div className="grid grid-rows-2 gap-12 px-7 py-7 box rounded-3xl w-full md:w-[100%] h-72 slideInRight">
-                        <div className="flex items-center gap-14 overflow-hidden">
+                    <div className="flex flex-col px-7 box rounded-3xl w-full md:w-[100%] h-full slideInRight">
+                        <div className="flex items-center h-[40%] gap-14 overflow-hidden">
                             <div className="bg-black/20 size-20 rounded-full shadow-inner">
                                 <img src={faceEmoji.src} alt=""/>   
                             </div>
-                            <h1 className="text-3xl text-center font-rubik-mono overflow-hidden">Abdellah Bujujan</h1>
+                            <h1 className="text-3xl text-center font-rubik-mono overflow-hidden">Abdellah Boujoujan</h1>
                         </div>
                         <div className="">
-                            <p className="pb-4 w-[90%]">I am a Software Engineering student, Web developer, I specialize in Front-end,
-                                also a Web Designer.
+                            <p className="pb-4 w-[90%]">Software Engineering student and full-stack web developer with experience in building and maintaining web applications. Skilled in both front-end and back-end development,
+                                 focusing on clean, efficient, and scalable solutions.
                             </p>
                             <div className="flex flex-shrink-0 items-center gap-4 box bg-black/10 w-[55%] md:w-[30%] lg:w-[45%] py-1 px-3 anim">
                                 <div className="size-3 bg-green-500 rounded-full"></div>
-                                <div>
+                                <div className="">
                                     <p>Available For Projects</p>
                                 </div>
                             </div>
@@ -70,10 +70,10 @@ export const HeroSection = () => {
                             <div className="w-full md:w-[60%] flex flex-col gap-5">
                                 <div className="box size-24 w-full flex justify-between items-center px-8 md:px-16 slideInLeftdelay">
                                     <div>
-                                        <p className="text-xs text-gray-500">2024 CV</p>
+                                        <p className="text-xs text-gray-500">2025 Resume</p>
                                         <h1 className="text-3xl font-rubik-mono">Resume</h1>
                                     </div>
-                                    <a href="/CV-Bujujan.pdf" target="_blank"><img src={eye.src} alt="" className="size-9 hover:cursor-pointer" /></a>
+                                    <a href="/resume.pdf" target="_blank"><img src={eye.src} alt="" className="size-9 hover:cursor-pointer" /></a>
                                 </div>
                                 <div className="flex justify-center items-center box size-24 w-full slideInLeftlate">
                                     <p className="text-3xl font-rubik-mono">SOON</p>
@@ -85,7 +85,7 @@ export const HeroSection = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col justify-center md:flex-col w-[100%] md:w-[100%] lg:w-[65%] lg:flex-row py-4 gap-4">
+            <div className="flex flex-col justify-center md:flex-col w-[100%] md:w-[78%] lg:w-[65%] lg:flex-row py-4 gap-4">
                 <div className="flex flex-col gap-4 w-full md:w-[100%]">
                     <div className="flex flex-col md:flex-row gap-4">
                         <div className="flex justify-center items-center box size-40 w-full md:w-[50%] slideInRightlate">
